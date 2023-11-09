@@ -1,0 +1,26 @@
+.header1{
+    background-color: yellow;
+    height: 10vh;
+    width: 70vw;
+    line-height: 5vh;
+    border: 2px black groove;
+
+}
+.main1{
+    background-color: black;
+    color: white;
+    height: 70vh;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px yellow groove;
+}
+.footer{
+    background-color: lightgreen;
+    height: 10vh;
+    width: 70vw;
+    line-height: 5vh;
+    border: 2px black groove;
+}

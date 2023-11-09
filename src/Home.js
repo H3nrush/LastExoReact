@@ -69,7 +69,7 @@ function Home (){
   const lastThreePublishedArticles = publishedArticles.slice(-3);
 
   return (
-    <main>
+    <main className="main1">
       <h2>Les trois derniers articles : </h2>
       {lastThreePublishedArticles.map((article) => {
         return (
