@@ -3,6 +3,8 @@ import './App.css';
 import Header from './Header';
 import Footer from './Footer';
 import Home from './Home';
+import './style.scss';
+
 function App() {
   return (
     <div className="App">
