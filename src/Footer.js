@@ -1,7 +1,7 @@
 function Footer(){
     return(
         <footer>
-            <span>__________________________________________</span>
+            <span className="Line">__________________________________________</span>
             <p>Copyright reserved</p>
         </footer>
     )

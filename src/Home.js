@@ -61,20 +61,26 @@ function Home (){
               isPublished: false,
             },
           ];
+        
+  const publishedArticles = articles.filter((article) => {
+    return article.isPublished === true;
+  });
+
+  const lastThreePublishedArticles = publishedArticles.slice(-3);
+
+  return (
+    <main>
+      <h2>Les trois derniers articles : </h2>
+      {lastThreePublishedArticles.map((article) => {
         return (
-            <p>
-                {articles.map((article) => { 
-                return (
-                  <>
-                  {article.isPublished && (
-               <div>
-               <p>{article.title} | {article.price}</p>
-               </div>
-               )}
-               </>
-                   );
-                })}
-                </p>
-        )
-    }
+          <article>
+            <h2>{article.title}</h2>
+            <h3>{article.price}e</h3>
+          </article>
+        );
+      })}
+    </main>
+  );
+}
+    
 export default Home; 
